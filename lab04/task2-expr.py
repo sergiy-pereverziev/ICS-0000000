@@ -1,4 +1,4 @@
-import sys, math
+import math
 
 def func(a, b, c, x):
     d = 2

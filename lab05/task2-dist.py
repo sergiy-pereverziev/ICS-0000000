@@ -1,4 +1,4 @@
-import sys, math
+import math
 
 type Coordinates = tuple[float, float]
 type Point = tuple[str, Coordinates]
