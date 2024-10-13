@@ -10,7 +10,7 @@ def func(x):
     print(f"Calculating the function 𝑓(𝑥) = {a}ᐨˣ ∙ √|{b}𝑥| + log(|𝑥 + {d}|, {c}) / (|𝑥 + {d}| + {e})")
 
     abs_x_plus_d = math.fabs(x + d)
-    return math.pow(a, -x) * math.sqrt(math.fabs(b * x)) + math.log(abs_x_plus_d, c) / (abs_x_plus_d + e)
+    return (a ** -x) * math.sqrt(math.fabs(b * x)) + math.log(abs_x_plus_d, c) / (abs_x_plus_d + e)
 
 def main():
     try:

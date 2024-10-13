@@ -7,7 +7,7 @@ def func(a, b, c, x):
 
     print(f"Calculating the result of an expression √({a} ∙ cos {b} + exp({c}) + log(({d} ^ {x} + {e}), {f})")
 
-    return math.sqrt(a * math.cos(b) + math.exp(c)) + math.log((math.pow(d, x) + e), f)
+    return math.sqrt(a * math.cos(b) + math.exp(c)) + math.log(d ** x + e), f)
 
 def main():
     try:
