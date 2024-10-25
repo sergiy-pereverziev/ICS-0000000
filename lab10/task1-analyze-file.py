@@ -1,4 +1,4 @@
-import os, sys
+import sys
 
 def main():
     result_unique_filename = "unique.txt"
@@ -13,14 +13,12 @@ def main():
 
     try:
         file_name = sys.argv[1]
-        if not os.path.exists(file_name):
-            raise ValueError("Path does not exist")
-        
+
         with open(file_name, "r") as file:
             contents = file.read()
         
-    except ValueError as e:
-        print(f"Invalid input: {e}")
+    except FileNotFoundError as e:
+        print(f"File error: {e}")
         return
             
     clean_words = list(map(lambda word: word.strip(","), filter(lambda word: word, " ".join(contents.split("\n")).split(" "))))
